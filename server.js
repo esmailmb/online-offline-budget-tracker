@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds231725.mlab.com:31725/heroku_sqc6mlww", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://db-budget:Budget@cluster0.pmnif.mongodb.net/db?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
